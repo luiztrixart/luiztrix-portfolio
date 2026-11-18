@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#FFFCF3">
+<title>Duo Cucina — Identidade visual | Luiz Trix</title>
+<style>
+:root{--red:#821507;--cream:#FFFCF3;--ink:#281c18;--muted:#765f56;--line:#e7d9cc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+nav{height:70px;padding:0 5vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:var(--cream)}
+nav a{font-size:10px;letter-spacing:.17em;text-transform:uppercase;font-weight:700;text-decoration:none;color:var(--ink)}.brand{letter-spacing:.2em}.links{display:flex;gap:28px}
+.hero{height:min(690px,78vw);min-height:540px;position:relative;overflow:hidden;background:var(--red)}
+.hero-photo{position:absolute;inset:0;background:url('assets/duo-uniforme.png') center 42%/cover no-repeat}
+.hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(130,21,7,.88) 0%,rgba(130,21,7,.48) 35%,rgba(130,21,7,.04) 68%,transparent 100%)}
+.hero-copy{position:absolute;z-index:2;left:7vw;top:50%;transform:translateY(-50%);max-width:550px;color:var(--cream)}
+.kicker,.eyebrow{font-size:10px;letter-spacing:.24em;text-transform:uppercase;font-weight:700;color:var(--red)}
+.hero .kicker{color:#f4cfc1}.hero h1{font:700 clamp(58px,7.5vw,112px)/.88 Georgia,serif;letter-spacing:-.065em;margin:38px 0 24px;max-width:560px}.hero p{font-size:16px;line-height:1.8;max-width:410px;margin:0;color:#fff0e8}.hero-tag{font-size:10px;letter-spacing:.2em;text-transform:uppercase;margin-top:38px}
+.section{padding:105px 7vw}.identity{background:var(--cream);padding-top:95px;padding-bottom:110px}
+.identity-row{display:grid;grid-template-columns:1fr 1fr;gap:6vw;align-items:center;max-width:1250px;margin:0 auto}
+.identity-logo{width:100%;max-width:570px;mix-blend-mode:multiply}.identity-people{width:100%;max-width:330px;justify-self:center;mix-blend-mode:multiply}
+.identity-copy{max-width:930px;margin:75px auto 0;text-align:center}.identity-copy .eyebrow{margin-bottom:20px}.identity-copy h2{font:700 clamp(38px,5vw,66px)/1.02 Georgia,serif;letter-spacing:-.055em;color:var(--red);margin:0 auto 28px;max-width:900px}.identity-copy p{font-size:18px;line-height:1.85;color:#5e4941;max-width:850px;margin:0 auto}
+.colors{background:#f2e7d9;padding:85px 7vw}.colors-head{display:grid;grid-template-columns:1fr 1fr;gap:6vw;align-items:end;margin-bottom:42px}.colors h2{font:700 clamp(40px,5vw,64px)/.98 Georgia,serif;letter-spacing:-.055em;margin:15px 0 0}.colors-head p{font-size:18px;line-height:1.8;color:#5e4941;margin:0}.swatches{display:grid;grid-template-columns:1fr 1fr;gap:18px}.swatch{min-height:210px;padding:25px;display:flex;flex-direction:column;justify-content:flex-end}.swatch.red{background:var(--red);color:var(--cream)}.swatch.cream{background:var(--cream);color:var(--red);border:1px solid #dfd0c1}.swatch strong{font:700 28px Georgia,serif}.swatch small{font-size:12px;letter-spacing:.14em;margin-top:10px}.colors-note{font-size:18px;line-height:1.8;color:#5e4941;max-width:980px;margin:32px 0 0}
+.red-story{background:#821507;color:var(--cream);padding:0;position:relative;overflow:hidden}.red-story:after{content:none}.story-full-art{display:block;width:100%;height:auto}.red-story .story-copy{position:absolute;left:4.1%;top:50%;transform:translateY(-50%);width:36%;max-width:700px;z-index:2}
+.story-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:6vw;align-items:center;position:relative;z-index:1}.story-copy h2{font:700 clamp(48px,6vw,82px)/.92 Georgia,serif;letter-spacing:-.06em;margin:20px 0 28px}.story-copy p{font-size:20px;line-height:1.8;max-width:560px;color:#fff0e8;margin:0}.story-art{display:flex;justify-content:center;align-items:center;min-height:440px}.story-art img{width:100%;max-width:600px;height:auto;filter:drop-shadow(0 28px 30px rgba(45,8,3,.22))}
+.application{background:#6D1107;padding:0;overflow:hidden}.app-head{max-width:1150px;margin:0 auto 45px;padding:90px 7vw 0;display:grid;grid-template-columns:1fr 1fr;gap:5vw;align-items:end}.app-head h2{font:700 clamp(44px,5.5vw,74px)/.95 Georgia,serif;letter-spacing:-.06em;color:var(--red);margin:15px 0 0}.app-head p{font-size:18px;line-height:1.8;color:#5e4941;margin:0}
+.app-stage{max-width:none;width:100%;margin:0;position:relative;min-height:0}.app-bags{position:absolute;width:62%;left:-2%;top:0;z-index:2}.app-hand{position:absolute;width:43%;right:0;top:115px;z-index:3}.app-bread{position:absolute;width:35%;left:14%;top:485px;z-index:4}.app-shirt{position:absolute;width:48%;right:3%;top:510px;z-index:1}.app-stage img{height:auto;filter:drop-shadow(0 18px 22px rgba(56,30,18,.10))}
+.closing{background:#6D1107;color:var(--cream);padding:90px 7vw 95px;position:relative;overflow:hidden}.closing-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:5vw;align-items:center;max-width:1350px;margin:auto}.closing h2{font:700 clamp(55px,7vw,100px)/.86 Georgia,serif;letter-spacing:-.07em;margin:0}.closing p{font-size:20px;line-height:1.8;color:#fff0e8;max-width:430px;margin:0}.closing img{width:100%;max-width:460px;justify-self:center;filter:drop-shadow(0 25px 28px rgba(43,7,3,.25));transform:rotate(3deg)}
+footer{padding:26px 5vw;background:var(--ink);color:#e8d9cf;display:flex;justify-content:space-between;font-size:10px;letter-spacing:.14em;text-transform:uppercase}
+.back-to-top{position:fixed;right:24px;bottom:24px;z-index:20;width:46px;height:46px;border:1px solid var(--red);border-radius:50%;background:var(--cream);color:var(--red);font-size:22px;opacity:0;visibility:hidden;transition:.25s;cursor:pointer}.back-to-top.visible{opacity:1;visibility:visible}
+@media(max-width:800px){nav{height:64px}.links{gap:14px}.hero{height:auto;min-height:720px}.hero-photo{background-position:60% center}.hero-photo:after{background:linear-gradient(90deg,rgba(130,21,7,.84),rgba(130,21,7,.36) 72%,rgba(130,21,7,.1))}.hero-copy{left:7vw;right:7vw;top:48%}.hero h1{font-size:clamp(60px,12vw,88px)}.section{padding:75px 7vw}.identity-row{gap:3vw}.identity-logo{max-width:100%}.identity-people{max-width:230px}.identity-copy{margin-top:55px}.identity-copy p,.colors-head p,.colors-note,.story-copy p,.app-head p,.closing p{font-size:16px}.colors-head,.story-grid,.app-head,.closing-grid{grid-template-columns:1fr}.colors-head{gap:20px}.story-grid{gap:20px}.story-art{min-height:0}.story-art img{max-width:450px}.app-stage{min-height:680px}.app-bags{width:72%;left:-7%}.app-hand{width:47%;right:-3%;top:130px}.app-bread{width:40%;left:7%;top:400px}.app-shirt{width:53%;right:-2%;top:430px}.closing-grid{gap:35px}.closing img{max-width:330px}footer{gap:12px;flex-wrap:wrap}}
+@media(max-width:520px){nav a{font-size:8px}.brand{font-size:10px}.links{gap:10px}.hero{min-height:670px}.hero-copy{top:45%}.hero h1{font-size:62px;margin:30px 0 20px}.hero p{font-size:15px}.identity-row{grid-template-columns:1fr;gap:35px}.identity-logo{max-width:340px;justify-self:center}.identity-people{max-width:180px}.identity-copy h2{font-size:40px}.identity-copy p{font-size:16px}.swatches{gap:10px}.swatch{min-height:150px;padding:15px}.swatch strong{font-size:21px}.swatch small{font-size:9px;line-height:1.5}.colors h2,.app-head h2{font-size:43px}.story-copy h2{font-size:54px}.story-copy p{font-size:17px}.story-art img{max-width:330px}.app-stage{min-height:0;display:flex;flex-direction:column;gap:22px}.app-stage img{position:relative!important;inset:auto!important;width:100%!important;max-width:100%;height:auto}.app-bags{margin-left:-5%;width:105%!important}.app-hand{width:88%!important;align-self:flex-end}.app-bread{width:72%!important;align-self:flex-start}.app-shirt{width:100%!important}.closing h2{font-size:58px}.closing p{font-size:17px}.closing img{max-width:280px}}
+
+.identity-row{display:flex;justify-content:center;align-items:center;max-width:1500px}
+.identity-composition{display:block;width:100%;height:auto;mix-blend-mode:multiply}
+.story-grid{grid-template-columns:.8fr 1.2fr;gap:4vw}
+.story-art{min-height:0;overflow:visible}
+.story-art img{display:block;width:100%;max-width:none;height:auto;filter:none}
+.app-stage{min-height:0;max-width:100%;margin:0 auto}
+.app-composition{display:block;width:100%;height:auto;filter:none!important;margin:0}
+.closing-grid{grid-template-columns:1.1fr .9fr}
+.closing-copy{display:flex;flex-direction:column;align-items:flex-start;gap:32px}
+.whatsapp-cta{display:inline-flex;align-items:center;gap:12px;padding:17px 24px;border:1px solid rgba(255,252,243,.65);border-radius:999px;color:var(--cream);font-size:12px;font-weight:700;letter-spacing:.08em;text-decoration:none;transition:background .2s,color .2s,border-color .2s}
+.whatsapp-cta span{font-size:18px;line-height:1}
+.whatsapp-cta:hover{background:var(--cream);color:var(--red);border-color:var(--cream)}
+@media(max-width:800px){.identity-row{display:block}.identity-composition{width:100%}.story-grid{grid-template-columns:1fr}.story-art{margin-top:12px}.app-stage{min-height:0}.closing-grid{grid-template-columns:1fr}.closing-copy{gap:24px}}
+@media(max-width:520px){.identity{padding-top:55px;padding-bottom:65px}.identity-composition{width:110%;max-width:none;margin-left:-5%}.story-art{margin-left:-7vw;margin-right:-7vw}.story-art img{width:100%}.app-stage{margin-left:-7vw;margin-right:-7vw}.app-composition{width:100%}.closing-copy{align-items:flex-start}.whatsapp-cta{font-size:10px;padding:15px 18px}}
+
+
+/* Correções de composição aprovadas pelo cliente */
+.red-story{background:#821507;padding:0;min-height:0}
+.red-story:after{display:none!important;content:none!important}
+.story-full-art{display:block;width:100%;height:auto}
+.red-story .story-copy{position:absolute;left:4.1%;top:50%;transform:translateY(-50%);width:36%;max-width:700px}
+.application{background:#6D1107!important;padding:0!important}
+.application .app-head{padding:90px 7vw 0;margin-bottom:45px}
+.application .app-stage{width:100%;max-width:none;margin:0;min-height:0}
+.application .app-composition{display:block;width:100%;height:auto;margin:0}
+.closing{background:#6D1107!important}
+@media(max-width:800px){
+ .red-story{position:relative}
+ .red-story .story-copy{left:6%;top:8%;transform:none;width:48%;max-width:none}
+ .red-story .story-copy h2{font-size:clamp(25px,5vw,42px)}
+ .red-story .story-copy p{font-size:clamp(10px,1.7vw,15px);line-height:1.5}
+ .application .app-head{padding:60px 7vw 0}
+}
+@media(max-width:520px){
+ .red-story .story-copy{left:5%;top:5%;width:47%}
+ .red-story .story-copy .eyebrow{font-size:7px}
+ .red-story .story-copy h2{font-size:25px}
+ .red-story .story-copy p{font-size:9px;line-height:1.35}
+ .application .app-head{padding:55px 7vw 0}
+}
+
+
+/* Separação correta entre texto de aplicações e mockups */
+.application-intro{background:var(--cream);color:var(--ink);padding:0}
+.application-intro .app-head{
+  max-width:1150px;
+  margin:0 auto;
+  padding:90px 7vw 78px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:5vw;
+  align-items:end;
+  background:var(--cream);
+}
+.application-intro .app-head h2{color:var(--ink)}
+.application-intro .app-head p{color:#5e4941}
+.application{background:#6D1107!important;padding:0!important;margin:0}
+.application .app-stage{width:100%;max-width:none;margin:0;min-height:0}
+.application .app-composition{display:block;width:100%;height:auto;margin:0}
+@media(max-width:800px){
+  .application-intro .app-head{grid-template-columns:1fr;gap:20px;padding:65px 7vw 55px}
+}
+
+</style></head>
+<body>
+<nav><a class="brand" href="index.html">LUIZ TRIX</a><div class="links"><a href="index.html">INÍCIO</a><a href="luiz-trix-design.html">DESIGN</a><a href="fotografia.html">FOTOGRAFIA</a></div></nav>
+<header class="hero"><div class="hero-photo" role="img" aria-label="Pessoa usando camiseta da Duo Cucina em uma padaria"></div><div class="hero-copy"><div class="kicker">Identidade visual · Panificação artesanal</div><h1>Feito a<br>quatro mãos.</h1><p>Uma identidade que aproxima a marca das pessoas por meio de personagens, cores quentes e uma linguagem visual que celebra o prazer de fazer e compartilhar.</p><div class="hero-tag">Pães · Doces · Afeto</div></div></header>
+
+<section class="identity">
+ <div class="identity-row"><img class="identity-composition" src="assets/duo-identidade.png" alt="Logotipo Duo Cucina e personagens ilustrados lado a lado"></div>
+ <div class="identity-copy"><div class="eyebrow">01 / Conceito da marca</div><h2>Duas pessoas. Dois universos. Um só sabor.</h2><p>O nome Duo traduz a ideia de parceria: duas pessoas que se encontram na cozinha para criar e compartilhar. Essa dualidade também aparece no próprio cardápio, no encontro entre o doce e o salgado. A identidade transforma essa união em uma linguagem visual próxima e bem-humorada, com personagens que dão rosto à marca e tornam sua presença mais humana e memorável.</p></div>
+</section>
+
+<section class="colors">
+ <div class="colors-head"><div><div class="eyebrow">02 / Cores da identidade</div><h2>Calor, contraste<br>e apetite visual.</h2></div><p>O vermelho profundo traz energia, personalidade e presença. O creme equilibra essa intensidade com acolhimento, leveza e uma referência sutil aos ingredientes e materiais do universo da panificação.</p></div>
+ <div class="swatches"><div class="swatch red"><strong>#821507</strong><small>VERMELHO · H 5° / S 94% / B 50%</small></div><div class="swatch cream"><strong>#FFFCF3</strong><small>CREME · H 46° / S 5% / B 100%</small></div></div>
+ <p class="colors-note">A combinação mantém a identidade simples e reconhecível. O contraste entre as duas cores funciona tanto nas aplicações sobre papel kraft e tecido quanto nos materiais digitais, criando unidade sem tirar o protagonismo das ilustrações e dos produtos.</p>
+</section>
+
+<section class="red-story">
+ <img class="story-full-art" src="assets/duo-personagens-mockup.png" alt="Sacola Duo Cucina com croissant sobre fundo vermelho">
+ <div class="story-copy"><div class="eyebrow" style="color:#f5c9ba">03 / Personagens</div><h2>Uma dupla que dá vida à marca.</h2><p>Os personagens representam o encontro que está no centro da Duo Cucina. Com utensílios nas mãos, eles traduzem o fazer artesanal e a colaboração de quem prepara cada produto. Mais do que um símbolo, são a expressão visual de uma marca feita por pessoas e para pessoas.</p></div>
+</section>
+
+<section class="application-intro">
+ <div class="app-head"><div><div class="eyebrow">04 / Aplicações</div><h2>Da identidade<br>para o dia a dia.</h2></div><p>Nas embalagens e no uniforme, a identidade ganha presença e passa a fazer parte da experiência. Os personagens, o vermelho e a assinatura visual acompanham a marca em diferentes pontos de contato.</p></div>
+</section>
+<section class="application">
+ <div class="app-stage"><img class="app-composition" src="assets/duo-aplicacoes.png" alt="Composição de aplicações da identidade Duo Cucina em sacolas e embalagens"></div>
+</section>
+
+<section class="closing"><div class="closing-grid"><h2>Gostoso<br>demais.</h2><div class="closing-copy"><p>Uma identidade que celebra a parceria, valoriza o feito à mão e transforma cada embalagem em mais um jeito de reconhecer a Duo Cucina.</p><a class="whatsapp-cta" href="https://wa.me/5531982486560?text=Ol%C3%A1%2C%20Luiz%21%20Conheci%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener"> <span aria-hidden="true">↗</span> Vamos conversar sobre um projeto</a></div></div></section>
+<footer><span>© LUIZ TRIX · DESIGN</span><span>DUO CUCINA · IDENTIDADE VISUAL</span></footer>
+<button class="back-to-top" id="backToTop" type="button" aria-label="Voltar ao topo" title="Voltar ao topo">↑</button>
+<script>(()=>{const b=document.getElementById('backToTop');const u=()=>b.classList.toggle('visible',scrollY>320);addEventListener('scroll',u,{passive:true});u();b.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));})();</script>
+</body></html>
