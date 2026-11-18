@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LOC Solar — Projeto de identidade visual | Luiz Trix</title>
+<style>
+:root{--ink:#111513;--panel:#1b1f1e;--green:#a6e22e;--deep:#0f3d2e;--yellow:#ffc107;--cream:#f3f0e8;--muted:#a8b0a8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:#20231f;font-family:Arial,Helvetica,sans-serif}
+.brand-lines{position:absolute;inset:0;height:100%;width:100%;z-index:1;pointer-events:none;overflow:hidden;opacity:.11}
+.brand-lines svg{width:100%;height:100%;display:block}
+.brand-lines path{fill:none;stroke:#a6e22e;stroke-width:1.15;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:14 24;animation:trace-flow 70s linear infinite}
+.brand-lines path:nth-child(2){animation-duration:92s;animation-direction:reverse;opacity:.7}
+.brand-lines path:nth-child(3){animation-duration:110s;opacity:.55}
+.brand-lines path:nth-child(4){animation-duration:125s;opacity:.5}
+@keyframes trace-flow{to{stroke-dashoffset:-1800}}
+body{position:relative}
+body>nav,body>header,body>.closing,body>footer{position:relative;z-index:2}
+body>section{position:relative;z-index:0}
+body>section>*{position:relative;z-index:2}
+nav{height:76px;padding:0 5vw;display:flex;align-items:center;justify-content:space-between;background:var(--cream);position:sticky;top:0;z-index:5}
+nav a{color:#20231f;text-decoration:none;font-size:11px;letter-spacing:.16em;font-weight:700}nav .links{display:flex;gap:30px}.brand{font-size:14px;letter-spacing:.1em}
+.hero{background:var(--ink);color:white;min-height:670px;position:relative;overflow:hidden;display:grid;grid-template-columns:43% 57%}
+.hero-copy{padding:80px 6vw 70px;display:flex;flex-direction:column;justify-content:center;z-index:1;background:linear-gradient(90deg,#0f1113 78%,rgba(15,17,19,.82))}
+.kicker{color:var(--green);font-size:10px;letter-spacing:.24em;text-transform:uppercase;font-weight:bold}
+.hero-logo{width:min(100%,510px);height:auto;display:block;margin:45px 0 35px;object-fit:contain}
+.hero h1{font-size:clamp(34px,4vw,58px);line-height:1.04;letter-spacing:-.045em;margin:0 0 20px;font-weight:700}
+.hero p{max-width:390px;color:#c9cec8;line-height:1.7;font-size:14px;margin:0}
+.hero-image{background:url('assets/locsolar-hero.png') center/cover no-repeat;min-height:670px;position:relative}
+.hero-image:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0f1113 0%,transparent 25%),linear-gradient(0deg,rgba(0,0,0,.2),transparent 35%)}
+.section{padding:110px 8vw}.section.dark{background:var(--ink);color:white}.concept-section{background:#080808!important}.section.green{background:var(--deep);color:white}
+.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:55px}
+.section-head h2{font-size:clamp(32px,4vw,54px);line-height:1.02;letter-spacing:-.045em;margin:12px 0 0;max-width:650px}
+.section-head p{max-width:330px;color:#777f77;font-size:13px;line-height:1.7;margin:0}.dark .section-head p,.green .section-head p{color:#b3beb4}
+.concept{display:grid;grid-template-columns:1fr 1fr;gap:7vw;align-items:center}
+.concept .statement{font-size:clamp(24px,3vw,39px);line-height:1.2;letter-spacing:-.03em;margin:0;max-width:560px}
+.concept .body{font-size:14px;line-height:1.85;color:#b9c1b9;max-width:480px}
+.logo-panel{background:transparent;padding:44px 0 0;display:flex;align-items:center;justify-content:center;min-height:390px}
+.logo-panel img{width:100%;max-width:760px;height:auto}
+.build{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#39443b;margin-top:55px}
+.build div{background:var(--ink);padding:30px 28px;min-height:175px}
+.build b{display:block;color:var(--green);font-size:17px;letter-spacing:.12em;margin-bottom:16px}.build span{font-size:16px;color:#e0e5df;line-height:1.65}
+.palette{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:38px}
+.swatch{height:105px;border-radius:2px}.palette small{display:block;color:#d3d9d2;font-size:10px;letter-spacing:.1em;margin-top:12px}
+.applications{display:grid;grid-template-columns:1.25fr .75fr;gap:3px}
+.app-main{min-height:480px;background:url('assets/locsolar-hero.png') center/cover;position:relative}
+.app-main:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.65),transparent 55%)}
+.app-main .caption{position:absolute;bottom:35px;left:38px;z-index:1;color:white;font-size:12px;letter-spacing:.18em}
+.app-side{display:grid;grid-template-rows:1fr 1fr;gap:3px}
+.app-logo{background:linear-gradient(140deg,#124b3a,#0b1712);display:flex;align-items:center;justify-content:center;padding:35px}
+.app-logo img{width:90%;max-width:370px}
+.app-message{background:#171d19;padding:42px;display:flex;flex-direction:column;justify-content:center}
+.app-message strong{font-size:clamp(24px,3vw,38px);line-height:1.05;color:var(--green);letter-spacing:-.04em}
+.app-message span{font-size:12px;line-height:1.7;color:#d0d6d0;margin-top:16px;max-width:260px}
+
+.board,.wide-board{margin:48px 0 0}.board img,.wide-board img{display:block;width:100%;height:auto}.board figcaption,.wide-board figcaption{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#9aa39a;margin-top:13px}
+.application-board{max-width:1100px;margin-left:auto;position:relative;z-index:1}
+.closing{padding:90px 8vw;background:var(--green);color:#111713;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.closing h2{font-size:clamp(34px,5vw,64px);line-height:.98;letter-spacing:-.05em;margin:0;max-width:720px}
+.closing a{color:#111713;text-decoration:none;border-bottom:1px solid #111713;padding-bottom:9px;font-size:11px;letter-spacing:.16em;font-weight:bold;white-space:nowrap}
+footer{padding:30px 5vw;background:var(--cream);display:flex;justify-content:space-between;font-size:10px;letter-spacing:.12em;color:#646b63}
+@media(max-width:800px){nav{height:64px}.hero{grid-template-columns:1fr}.hero-copy{padding:70px 8vw 50px}.hero-image{min-height:380px}.section{padding:75px 7vw}.section-head,.concept{display:block}.section-head p{margin-top:22px}.build{grid-template-columns:repeat(2,1fr)}.palette{grid-template-columns:repeat(3,1fr)}.applications{grid-template-columns:1fr}.app-main{min-height:350px}.app-side{grid-template-columns:1fr 1fr;grid-template-rows:260px}.app-message{padding:25px}.closing{display:block}.closing a{display:inline-block;margin-top:30px}}
+@media(max-width:480px){.board,.wide-board{margin-top:30px}nav .links{gap:14px}nav a{font-size:9px}.hero-logo{margin:32px 0}.build{grid-template-columns:1fr 1fr}.app-side{grid-template-columns:1fr;grid-template-rows:220px auto}.palette{grid-template-columns:repeat(2,1fr)}footer{gap:12px;flex-wrap:wrap}}
+
+/* Navegação global: retorno ao topo */
+.back-to-top{position:fixed;right:26px;bottom:26px;z-index:50;width:48px;height:48px;border:1px solid rgba(166,226,46,.72);border-radius:50%;background:rgba(10,14,11,.88);color:#A6E22E;display:flex;align-items:center;justify-content:center;font-size:23px;line-height:1;cursor:pointer;opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .25s,visibility .25s,transform .25s,background .25s;backdrop-filter:blur(8px)}
+.back-to-top.visible{opacity:1;visibility:visible;transform:translateY(0)}
+.back-to-top:hover{background:#A6E22E;color:#101510}
+@media(max-width:620px){.back-to-top{right:15px;bottom:15px;width:44px;height:44px}}
+
+</style></head>
+<body>
+<div class="brand-lines" aria-hidden="true"><svg viewBox="0 0 1440 3200" preserveAspectRatio="none"><path d="M-80 560 C180 460 220 780 430 700 S690 390 860 560 S1110 900 1510 650"/><path d="M-60 1180 L210 1180 L340 1020 L500 1290 L650 1140 L820 1140 L1010 930 L1190 1110 L1500 1110"/><path d="M-90 2100 C180 1900 250 2350 500 2180 S820 1860 1000 2050 S1260 2440 1510 2200"/><path d="M220 0 L220 470 L360 610 L360 980 M1180 0 L1180 400 L1060 520 L1060 880"/></svg></div>
+<nav><a class="brand" href="index.html">LUIZ TRIX</a><div class="links"><a href="index.html">INÍCIO</a><a href="luiz-trix-design.html">DESIGN</a><a href="fotografia.html">FOTOGRAFIA</a></div></nav>
+<header class="hero">
+ <div class="hero-copy"><div class="kicker">Identidade visual · Energia e mobilidade</div><img class="hero-logo" src="assets/logo-loc.png" alt="Logotipo original LOC Solar"><h1>Energia limpa.<br>Movimento que conecta.</h1><p>Uma identidade criada para traduzir conexão, tecnologia e mobilidade sustentável em uma marca forte, direta e reconhecível.</p></div>
+ <div class="hero-image" role="img" aria-label="Estação de recarga para veículos elétricos sob cobertura solar"></div>
+</header>
+<section class="section dark concept-section">
+ <div class="section-head"><div><div class="kicker">01 / Conceito</div><h2>Uma marca feita para conectar o futuro.</h2></div><p>LOC Solar atua no encontro entre energia renovável e mobilidade elétrica. A identidade precisava expressar tecnologia sem perder clareza e personalidade.</p></div>
+ <div class="concept"><p class="statement">Localização. Energia. Conexão. Três ideias reunidas em um símbolo único.</p><div class="body">O desenho combina as letras L, O e C em uma construção geométrica. O círculo verde remete à energia solar e continuidade; o raio atravessa a composição como sinal de potência e movimento. O resultado é um símbolo compacto, contemporâneo e fácil de reconhecer.</div></div>
+ <div class="logo-panel"><img src="assets/logo-loc.png" alt="Logotipo original LOC Solar em fundo escuro"></div>
+</section>
+<section class="section">
+ <div class="section-head"><div><div class="kicker">02 / Sistema visual</div><h2>Contraste, energia e presença.</h2></div><p>A paleta combina tons escuros e verdes para transmitir tecnologia, confiança e sustentabilidade. O verde-lima funciona como ponto de energia e destaque.</p></div>
+ <div class="palette">
+  <div><div class="swatch" style="background:#A6E22E"></div><small>VERDE NEON</small></div>
+  <div><div class="swatch" style="background:#555555"></div><small>CINZA</small></div>
+  <div><div class="swatch" style="background:#080808"></div><small>PRETO</small></div>
+  <div><div class="swatch" style="background:#FFFFFF;border:1px solid #d8d8d8"></div><small>BRANCO</small></div>
+ </div>
+ <figure class="board"><img src="assets/locsolar-paleta.png" alt="Prancha original de defesa da paleta de cores LOC Solar"><figcaption>Prancha de identidade · Paleta cromática e significado das cores</figcaption></figure>
+ <div class="build">
+  <div><b>LOCALIZAÇÃO</b><span>A letra L abre a construção e ancora o nome.</span></div>
+  <div><b>ENERGIA SOLAR</b><span>O círculo verde representa o sol e a energia renovável.</span></div>
+  <div><b>MOVIMENTO</b><span>O raio sugere potência, fluxo e eletricidade.</span></div>
+  <div><b>CONEXÃO</b><span>O C fecha o conjunto e reforça a ideia de ligação.</span></div>
+ </div>
+
+</section>
+<section class="section dark supplied-boards" style="position:relative;overflow:hidden">
+ <div class="section-head"><div><div class="kicker">04 / Construção e aplicações</div><h2>Do conceito à presença da marca.</h2></div><p>As pranchas apresentam a construção do símbolo e a aplicação da identidade em diferentes pontos de contato.</p></div>
+ <figure class="wide-board"><img src="assets/locsolar-defesa-marca.png" alt="Prancha de construção da marca LOC Solar e aplicações"><figcaption>Construção do símbolo, assinatura e aplicações da identidade</figcaption></figure>
+ <figure class="wide-board application-board"><img src="assets/locsolar-aplicacoes.png" alt="Mockups de uniformes, garrafa, cartões e materiais LOC Solar"><figcaption>Aplicações institucionais · Uniforme, materiais impressos e objetos de marca</figcaption></figure>
+</section>
+<section class="section green">
+ <div class="section-head"><div><div class="kicker">03 / Aplicações</div><h2>Uma identidade pronta para sair da tela.</h2></div><p>A linguagem visual foi pensada para funcionar em pontos de recarga, sinalização, equipamentos e comunicação digital.</p></div>
+ <div class="applications">
+  <div class="app-main"><div class="caption">MOBILIDADE ELÉTRICA · ENERGIA SOLAR</div></div>
+  <div class="app-side"><div class="app-logo"><img src="assets/logo-loc.png" alt="Logotipo original LOC Solar"></div><div class="app-message"><strong>ENERGIA<br>QUE CONECTA<br>O FUTURO.</strong><span>Uma presença visual consistente para uma nova forma de se movimentar.</span></div></div>
+ </div>
+</section>
+<div class="closing"><h2>Energia limpa.<br>Movimento que conecta.</h2><a href="luiz-trix-design.html">VOLTAR AOS PROJETOS ↗</a></div>
+<footer><span>© LUIZ TRIX · DESIGN</span><span>LOC SOLAR · IDENTIDADE VISUAL</span></footer>
+
+<button class="back-to-top" id="backToTop" type="button" aria-label="Voltar ao topo" title="Voltar ao topo">↑</button>
+<script>
+(()=>{const b=document.getElementById('backToTop');if(!b)return;const update=()=>b.classList.toggle('visible',window.scrollY>320);window.addEventListener('scroll',update,{passive:true});update();b.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));})();
+</script>
+
+</body></html>

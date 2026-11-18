@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f7f5ef">
+<title>Fotografia — Luiz Trix</title>
+<style>
+:root{--paper:#f7f5ef;--ink:#20201e;--muted:#85837d;--line:#dedbd2;--yellow:#f2bd00}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}
+.wrap{width:min(1320px,calc(100% - 64px));margin:auto}header{height:88px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-size:13px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;display:flex;align-items:center;gap:12px}.mark{width:7px;height:7px;background:var(--yellow);transform:rotate(45deg)}nav{display:flex;gap:30px;color:var(--muted);font-size:10px;letter-spacing:.16em;text-transform:uppercase}nav a{transition:color .2s}nav a:hover,nav a.active{color:var(--ink)}
+.hero{padding:76px 0 38px;display:flex;align-items:end;justify-content:space-between;gap:30px}.kicker{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted)}h1{font:700 clamp(48px,7vw,88px)/.94 Georgia,serif;letter-spacing:-.065em;margin:18px 0 0}h1 em{font-style:normal;color:#9b9a91}.hero-copy{font:italic 22px/1.35 Georgia,serif;max-width:300px;margin:0 0 8px;color:#5e5c56}
+.filters{display:flex;align-items:center;gap:23px;flex-wrap:wrap;padding:25px 0 22px;border-top:1px solid var(--line)}.filter{border:0;background:none;padding:0;color:var(--muted);font:10px Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;position:relative}.filter:hover,.filter.active{color:var(--ink)}.filter.active:after{content:"";position:absolute;left:0;right:0;bottom:-8px;height:2px;background:var(--yellow)}.count{margin-left:auto;color:var(--muted);font-size:9px;letter-spacing:.14em;text-transform:uppercase}
+.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2px;padding:0 2px 2px}.photo{position:relative;overflow:hidden;background:#24221e;aspect-ratio:1/1;display:block;margin:0}.photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .55s cubic-bezier(.2,.7,.2,1),filter .35s,opacity .35s}.photo:hover img{transform:scale(1.035);filter:blur(2px);opacity:.72}.photo:after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.16);opacity:0;transition:opacity .3s;pointer-events:none}.photo:hover:after{opacity:1}.photo figcaption,.photo-caption{position:absolute;z-index:1;left:22px;right:22px;bottom:22px;color:white;font-size:clamp(15px,1.6vw,23px);font-weight:700;letter-spacing:.01em;text-transform:none;opacity:0;transform:translateY(8px);transition:.3s;text-shadow:0 2px 18px rgba(0,0,0,.35);pointer-events:none}.photo:hover figcaption,.photo:hover .photo-caption{opacity:1;transform:translateY(0)}.photo[hidden]{display:none}
+.contact{padding:64px 0 34px;display:flex;justify-content:space-between;align-items:center}.contact strong{font:700 25px Georgia,serif}.contact span{font-size:10px;color:var(--muted);letter-spacing:.18em;text-transform:uppercase}.footer-line{height:1px;background:var(--line)}
+@media(max-width:800px){.hero{padding:62px 0 32px}.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:2px}.photo figcaption,.photo-caption{left:14px;right:14px;bottom:14px;font-size:17px}.filters{gap:17px}.count{width:100%;margin:0}}
+@media(max-width:540px){.wrap{width:calc(100% - 38px)}header{height:70px}.brand{font-size:11px}nav{gap:14px;font-size:8px}.hero{display:block;padding:54px 0 30px}h1{font-size:58px}.hero-copy{margin-top:22px;font-size:19px}.gallery{gap:2px;padding:0 2px 2px}.photo figcaption,.photo-caption{left:10px;right:10px;bottom:10px;font-size:14px}.filters{gap:15px 17px;padding:20px 0}.filter{font-size:9px}.contact{align-items:flex-start;gap:15px;flex-direction:column}}
+
+/* Navegação global: retorno ao topo */
+.back-to-top{position:fixed;right:26px;bottom:26px;z-index:50;width:48px;height:48px;border:1px solid rgba(166,226,46,.72);border-radius:50%;background:rgba(10,14,11,.88);color:#A6E22E;display:flex;align-items:center;justify-content:center;font-size:23px;line-height:1;cursor:pointer;opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .25s,visibility .25s,transform .25s,background .25s;backdrop-filter:blur(8px)}
+.back-to-top.visible{opacity:1;visibility:visible;transform:translateY(0)}
+.back-to-top:hover{background:#A6E22E;color:#101510}
+@media(max-width:620px){.back-to-top{right:15px;bottom:15px;width:44px;height:44px}}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="brand" href="index.html"><span class="mark"></span> Luiz Trix</a>
+  <nav aria-label="Navegação principal"><a href="index.html">Início</a><a href="luiz-trix-design.html">Design</a><a class="active" href="fotografia.html">Fotografia</a></nav>
+</header>
+<main>
+  <section class="hero">
+    <div><div class="kicker">Portfólio · Fotografia</div><h1>Seu cliente<br><em>come com os olhos!</em></h1></div>
+    <p class="hero-copy">Fotografia gastronômica que desperta desejo antes da primeira mordida.</p>
+  </section>
+  <section aria-label="Galeria de fotografias">
+    <div class="filters" role="group" aria-label="Filtrar fotografias">
+      <button class="filter active" data-filter="all" aria-pressed="true">Todas</button>
+      <button class="filter" data-filter="hamburguer" aria-pressed="false">Hambúrguer</button>
+      <button class="filter" data-filter="massas" aria-pressed="false">Massas</button>
+      <button class="filter" data-filter="pizza" aria-pressed="false">Pizza</button>
+      <button class="filter" data-filter="sushi" aria-pressed="false">Sushi</button>
+      <button class="filter" data-filter="carnes" aria-pressed="false">Carnes</button>
+      <button class="filter" data-filter="sobremesas" aria-pressed="false">Sobremesas</button>
+      <button class="filter" data-filter="finger-foods" aria-pressed="false">Finger foods</button>
+      <button class="filter" data-filter="bares" aria-pressed="false">Bares</button>
+      <button class="filter" data-filter="sushi" aria-pressed="false">Sushi</button>
+      <button class="filter" data-filter="bebidas" aria-pressed="false">Bebidas</button>
+      <span class="count" id="count">12 projetos</span>
+    </div>
+  </section>
+</div>
+<section class="gallery" id="gallery">
+<a class="photo" data-category="hamburguer" href="american-burger.html" aria-label="Ver projeto American Burger"><img src="fotos/american-burger/thumb-01.webp" alt="Fotografia American Burger" loading="lazy"><span class="photo-caption">American Burger</span></a>
+<a class="photo" data-category="bebidas" href="cachaca-pirapora.html" aria-label="Ver projeto Cachaça Pirapora"><img src="fotos/cachaca-pirapora/thumb-01.webp" alt="Fotografia Cachaça Pirapora" loading="lazy"><span class="photo-caption">Cachaça Pirapora</span></a>
+<a class="photo" data-category="hamburguer" href="bieel-lanches.html" aria-label="Ver projeto Bieel Lanches"><img src="fotos/bieel-lanches/thumb-01.webp" alt="Fotografia Bieel Lanches" loading="lazy"><span class="photo-caption">Bieel Lanches</span></a>
+<a class="photo" data-category="hamburguer" href="catons-burger.html" aria-label="Ver projeto Caton’s Burger"><img src="fotos/catons-burger/thumb-01.webp" alt="Fotografia Caton’s Burger" loading="lazy"><span class="photo-caption">Caton’s Burger</span></a>
+<a class="photo" data-category="bares" href="estacao-krug.html" aria-label="Ver projeto Estação Krug"><img src="fotos/estacao-krug/thumb-01.webp" alt="Fotografia Estação Krug" loading="lazy"><span class="photo-caption">Estação Krug</span></a>
+<a class="photo" data-category="sushi" href="hey-joe-sushi.html" aria-label="Ver projeto Hey Joe Sushi"><img src="fotos/hey-joe-sushi/thumb-01.webp" alt="Fotografia Hey Joe Sushi" loading="lazy"><span class="photo-caption">Hey Joe Sushi</span></a>
+<a class="photo" data-category="massas" href="forneria-do-mercado.html" aria-label="Ver projeto Forneria do Mercado"><img src="fotos/forneria-do-mercado/thumb-01.webp" alt="Fotografia Forneria do Mercado" loading="lazy"><span class="photo-caption">Forneria do Mercado</span></a>
+<a class="photo" data-category="massas" href="la-pasta.html" aria-label="Ver projeto La Pasta"><img src="fotos/la-pasta/thumb-01.webp" alt="Fotografia La Pasta" loading="lazy"><span class="photo-caption">La Pasta</span></a>
+<a class="photo" data-category="hamburguer" href="moba.html" aria-label="Ver projeto M.O.B.A."><img src="fotos/moba/thumb-01.webp" alt="Fotografia M.O.B.A." loading="lazy"><span class="photo-caption">M.O.B.A.</span></a>
+<a class="photo" data-category="pizza" href="pizza-tosto.html" aria-label="Ver projeto Pizza Tosto"><img src="fotos/pizza-tosto/thumb-01.webp" alt="Fotografia Pizza Tosto" loading="lazy"><span class="photo-caption">Pizza Tosto</span></a>
+<a class="photo" data-category="carnes" href="porcao.html" aria-label="Ver projeto Porcão"><img src="fotos/porcao/cover.webp" alt="Fotografia Porcão" loading="lazy"><span class="photo-caption">Porcão</span></a>
+<a class="photo" data-category="bares" href="quioxque.html" aria-label="Ver projeto Quioxque"><img src="fotos/quioxque/cover.webp" alt="Fotografia Quioxque" loading="lazy"><span class="photo-caption">Quioxque</span></a></section>
+<div class="wrap"><div class="footer-line"></div><footer class="contact"><strong>Vamos criar algo que dê água na boca?</strong><span>Contato · Luiz Trix</span></footer></div>
+<script>
+const buttons=[...document.querySelectorAll('.filter')];
+const photos=[...document.querySelectorAll('.photo')];
+const count=document.getElementById('count');
+buttons.forEach(button=>button.addEventListener('click',()=>{
+  const filter=button.dataset.filter;
+  buttons.forEach(item=>{const active=item===button;item.classList.toggle('active',active);item.setAttribute('aria-pressed',String(active));});
+  let visible=0;
+  photos.forEach(photo=>{const show=filter==='all'||photo.dataset.category===filter;photo.hidden=!show;if(show)visible++;});
+  count.textContent=`${visible} ${visible===1?'imagem':'imagens'}`;
+}));
+</script>
+
+<button class="back-to-top" id="backToTop" type="button" aria-label="Voltar ao topo" title="Voltar ao topo">↑</button>
+<script>
+(()=>{const b=document.getElementById('backToTop');if(!b)return;const update=()=>b.classList.toggle('visible',window.scrollY>320);window.addEventListener('scroll',update,{passive:true});update();b.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));})();
+</script>
+
+</body>
+</html>
