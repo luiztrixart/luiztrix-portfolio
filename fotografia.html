@@ -22,13 +22,20 @@
 .back-to-top:hover{background:#A6E22E;color:#101510}
 @media(max-width:620px){.back-to-top{right:15px;bottom:15px;width:44px;height:44px}}
 
+
+.wa-link{display:inline-flex;align-items:center;gap:9px;color:inherit;text-decoration:none}
+.wa-link svg{width:19px;height:19px;display:block;fill:currentColor}
+.wa-link:hover{opacity:.72}
+.wa-cta{display:inline-flex;align-items:center;gap:11px;padding:14px 20px;border:1px solid currentColor;border-radius:2px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;transition:background .2s,color .2s,transform .2s}
+.wa-cta svg{width:19px;height:19px;fill:currentColor}
+.wa-cta:hover{background:#A6E22E;color:#111;border-color:#A6E22E;transform:translateY(-2px)}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header>
   <a class="brand" href="index.html"><span class="mark"></span> Luiz Trix</a>
-  <nav aria-label="Navegação principal"><a href="index.html">Início</a><a href="luiz-trix-design.html">Design</a><a class="active" href="fotografia.html">Fotografia</a></nav>
+  <nav aria-label="Navegação principal"><a href="index.html">Início</a><a href="luiz-trix-design.html">Design</a><a class="active" href="fotografia.html">Fotografia</a><a class="wa-link" href="https://wa.me/5531982486560?text=Ol%C3%A1%2C%20Luiz%21%20Conheci%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener" aria-label="Fale comigo pelo WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.9L0 24l6.5-1.7a11.8 11.8 0 0 0 5.6 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4ZM12.1 21.7c-1.7 0-3.3-.4-4.8-1.3l-.3-.2-3.9 1 1-3.8-.2-.4a9.8 9.8 0 1 1 8.2 4.7Zm5.4-7.3c-.3-.2-1.7-.9-2-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.4-2.3-1.4-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6s-.7-1.6-1-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.2 3.2c.2.2 2.2 3.4 5.3 4.7.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.5Z"/></svg></a></nav>
 </header>
 <main>
   <section class="hero">
@@ -44,15 +51,14 @@
       <button class="filter" data-filter="sushi" aria-pressed="false">Sushi</button>
       <button class="filter" data-filter="carnes" aria-pressed="false">Carnes</button>
       <button class="filter" data-filter="sobremesas" aria-pressed="false">Sobremesas</button>
-      <button class="filter" data-filter="finger-foods" aria-pressed="false">Finger foods</button>
       <button class="filter" data-filter="bares" aria-pressed="false">Bares</button>
-      <button class="filter" data-filter="sushi" aria-pressed="false">Sushi</button>
       <button class="filter" data-filter="bebidas" aria-pressed="false">Bebidas</button>
-      <span class="count" id="count">12 projetos</span>
+      <span class="count" id="count">16 projetos</span>
     </div>
   </section>
 </div>
 <section class="gallery" id="gallery">
+<a class="photo" data-category="hamburguer" href="reen-burger.html" aria-label="Ver projeto Reen Burger"><img src="fotos/reen-burger/thumb-01.webp" alt="Fotografia Reen Burger" loading="lazy"><span class="photo-caption">Reen Burger</span></a><a class="photo" data-category="bebidas" href="red-lemon.html" aria-label="Ver projeto Red Lemon"><img src="fotos/red-lemon/cover.webp" alt="Fotografia Red Lemon" loading="lazy"><span class="photo-caption">Red Lemon</span></a><a class="photo" data-category="carnes" href="porcao.html" aria-label="Ver projeto Porcão"><img src="fotos/porcao/cover.webp" alt="Fotografia Porcão" loading="lazy"><span class="photo-caption">Porcão</span></a><a class="photo" data-category="bares" href="quioxque.html" aria-label="Ver projeto Quioxque"><img src="fotos/quioxque/cover.webp" alt="Fotografia Quioxque" loading="lazy"><span class="photo-caption">Quioxque</span></a><a class="photo" data-category="sushi" href="sushi-lab.html" aria-label="Ver projeto Sushi Lab"><img src="fotos/sushi-lab/cover.webp" alt="Fotografia Sushi Lab" loading="lazy"><span class="photo-caption">Sushi Lab</span></a>
 <a class="photo" data-category="hamburguer" href="american-burger.html" aria-label="Ver projeto American Burger"><img src="fotos/american-burger/thumb-01.webp" alt="Fotografia American Burger" loading="lazy"><span class="photo-caption">American Burger</span></a>
 <a class="photo" data-category="bebidas" href="cachaca-pirapora.html" aria-label="Ver projeto Cachaça Pirapora"><img src="fotos/cachaca-pirapora/thumb-01.webp" alt="Fotografia Cachaça Pirapora" loading="lazy"><span class="photo-caption">Cachaça Pirapora</span></a>
 <a class="photo" data-category="hamburguer" href="bieel-lanches.html" aria-label="Ver projeto Bieel Lanches"><img src="fotos/bieel-lanches/thumb-01.webp" alt="Fotografia Bieel Lanches" loading="lazy"><span class="photo-caption">Bieel Lanches</span></a>
@@ -62,10 +68,8 @@
 <a class="photo" data-category="massas" href="forneria-do-mercado.html" aria-label="Ver projeto Forneria do Mercado"><img src="fotos/forneria-do-mercado/thumb-01.webp" alt="Fotografia Forneria do Mercado" loading="lazy"><span class="photo-caption">Forneria do Mercado</span></a>
 <a class="photo" data-category="massas" href="la-pasta.html" aria-label="Ver projeto La Pasta"><img src="fotos/la-pasta/thumb-01.webp" alt="Fotografia La Pasta" loading="lazy"><span class="photo-caption">La Pasta</span></a>
 <a class="photo" data-category="hamburguer" href="moba.html" aria-label="Ver projeto M.O.B.A."><img src="fotos/moba/thumb-01.webp" alt="Fotografia M.O.B.A." loading="lazy"><span class="photo-caption">M.O.B.A.</span></a>
-<a class="photo" data-category="pizza" href="pizza-tosto.html" aria-label="Ver projeto Pizza Tosto"><img src="fotos/pizza-tosto/thumb-01.webp" alt="Fotografia Pizza Tosto" loading="lazy"><span class="photo-caption">Pizza Tosto</span></a>
-<a class="photo" data-category="carnes" href="porcao.html" aria-label="Ver projeto Porcão"><img src="fotos/porcao/cover.webp" alt="Fotografia Porcão" loading="lazy"><span class="photo-caption">Porcão</span></a>
-<a class="photo" data-category="bares" href="quioxque.html" aria-label="Ver projeto Quioxque"><img src="fotos/quioxque/cover.webp" alt="Fotografia Quioxque" loading="lazy"><span class="photo-caption">Quioxque</span></a></section>
-<div class="wrap"><div class="footer-line"></div><footer class="contact"><strong>Vamos criar algo que dê água na boca?</strong><span>Contato · Luiz Trix</span></footer></div>
+<a class="photo" data-category="pizza" href="pizza-tosto.html" aria-label="Ver projeto Pizza Tosto"><img src="fotos/pizza-tosto/thumb-01.webp" alt="Fotografia Pizza Tosto" loading="lazy"><span class="photo-caption">Pizza Tosto</span></a><a class="photo" data-category="sushi" href="tokkun.html" aria-label="Ver projeto Tokkun"><img src="fotos/tokkun/thumb-01.webp" alt="Fotografia Tokkun" loading="lazy"><span class="photo-caption">Tokkun</span></a></section>
+<div class="wrap"><div class="footer-line"></div><footer class="contact"><div><strong>Vamos criar algo que dê água na boca?</strong><p style="margin:10px 0 0;color:var(--muted);font-size:13px">Tem um projeto em mente? Vamos conversar.</p></div><a class="wa-cta" href="https://wa.me/5531982486560?text=Ol%C3%A1%2C%20Luiz%21%20Conheci%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.9L0 24l6.5-1.7a11.8 11.8 0 0 0 5.6 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4ZM12.1 21.7c-1.7 0-3.3-.4-4.8-1.3l-.3-.2-3.9 1 1-3.8-.2-.4a9.8 9.8 0 1 1 8.2 4.7Zm5.4-7.3c-.3-.2-1.7-.9-2-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.4-2.3-1.4-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6s-.7-1.6-1-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.2 3.2c.2.2 2.2 3.4 5.3 4.7.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.5Z"/></svg> Fale comigo pelo WhatsApp</a></footer></div>
 <script>
 const buttons=[...document.querySelectorAll('.filter')];
 const photos=[...document.querySelectorAll('.photo')];

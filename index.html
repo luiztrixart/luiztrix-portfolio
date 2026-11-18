@@ -101,7 +101,8 @@
       letter-spacing: -.065em;
     }
 
-    .rule {
+    .type-cursor{display:inline-block;width:2px;height:.78em;background:var(--accent);margin-left:8px;vertical-align:-.02em;animation:blink .8s steps(2,start) infinite}
+    @keyframes blink{to{visibility:hidden}}\n    .rule {
       width: 54px;
       height: 4px;
       background: var(--accent);
@@ -199,19 +200,26 @@
 .back-to-top:hover{background:#A6E22E;color:#101510}
 @media(max-width:620px){.back-to-top{right:15px;bottom:15px;width:44px;height:44px}}
 
+
+.wa-link{display:inline-flex;align-items:center;gap:9px;color:inherit;text-decoration:none}
+.wa-link svg{width:19px;height:19px;display:block;fill:currentColor}
+.wa-link:hover{opacity:.72}
+.wa-cta{display:inline-flex;align-items:center;gap:11px;padding:14px 20px;border:1px solid currentColor;border-radius:2px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;transition:background .2s,color .2s,transform .2s}
+.wa-cta svg{width:19px;height:19px;fill:currentColor}
+.wa-cta:hover{background:#A6E22E;color:#111;border-color:#A6E22E;transform:translateY(-2px)}
 </style>
 </head>
 <body>
   <div class="page">
     <header class="topbar">
       <div class="brand"><span class="brand-mark" aria-hidden="true"></span> Luiz Trix</div>
-      <div class="top-note">Portfólio · Belo Horizonte</div>
+      <div class="top-note">Portfólio · Belo Horizonte</div><a class="wa-link" href="https://wa.me/5531982486560?text=Ol%C3%A1%2C%20Luiz%21%20Conheci%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener" aria-label="Fale comigo pelo WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.9L0 24l6.5-1.7a11.8 11.8 0 0 0 5.6 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4ZM12.1 21.7c-1.7 0-3.3-.4-4.8-1.3l-.3-.2-3.9 1 1-3.8-.2-.4a9.8 9.8 0 1 1 8.2 4.7Zm5.4-7.3c-.3-.2-1.7-.9-2-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.4-2.3-1.4-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6s-.7-1.6-1-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.2 3.2c.2.2 2.2 3.4 5.3 4.7.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.5Z"/></svg></a>
     </header>
 
     <main>
       <section class="welcome" aria-labelledby="welcome-title">
         <p class="eyebrow">Design &amp; Fotografia</p>
-        <h1 id="welcome-title">Bem-vindo.</h1>
+        <h1 id="welcome-title"><span id="welcome-typewriter">Bem-vindo.</span><span class="type-cursor" aria-hidden="true"></span></h1>
         <div class="rule" aria-hidden="true"></div>
         <p class="question">O que deseja ver hoje?</p>
 
@@ -225,7 +233,7 @@
 
     <footer class="footer">
       <span>Identidade · Imagem · Experiência</span>
-      <span>Luiz Trix © 2026</span>
+      <span>Luiz Trix © 2026</span><a class="wa-link" href="https://wa.me/5531982486560?text=Ol%C3%A1%2C%20Luiz%21%20Conheci%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.9L0 24l6.5-1.7a11.8 11.8 0 0 0 5.6 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4ZM12.1 21.7c-1.7 0-3.3-.4-4.8-1.3l-.3-.2-3.9 1 1-3.8-.2-.4a9.8 9.8 0 1 1 8.2 4.7Zm5.4-7.3c-.3-.2-1.7-.9-2-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.4-2.3-1.4-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6s-.7-1.6-1-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.2 3.2c.2.2 2.2 3.4 5.3 4.7.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.5Z"/></svg></a>
     </footer>
   </div>
 
@@ -234,5 +242,8 @@
 (()=>{const b=document.getElementById('backToTop');if(!b)return;const update=()=>b.classList.toggle('visible',window.scrollY>320);window.addEventListener('scroll',update,{passive:true});update();b.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));})();
 </script>
 
+<script>
+(()=>{const el=document.getElementById('welcome-typewriter');if(!el)return;const text='Bem-vindo.';el.textContent='';let i=0;const type=()=>{if(i<text.length){el.textContent+=text.charAt(i++);setTimeout(type,82)}};setTimeout(type,250)})();
+</script>
 </body>
 </html>
